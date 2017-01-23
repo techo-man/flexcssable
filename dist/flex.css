@@ -1,0 +1,44 @@
+/* FLEX */
+.flex{ display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex: initial !important; }
+.flex1{ flex:1; }
+.flex100 {flex:100% !important;}
+.flexNoShrink { flex-shrink:0 !important;} /* Used to disable shrinking of a flex item in a flex group */
+.flexDirectionRow{ -moz-box-direction: row; -webkit-box-direction: row; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -ms-flexbox-direction: row; -ms-flex-direction: row; flex-direction: row; }
+.flexDirectionCol{ -moz-box-direction: column; -webkit-box-direction: column; -webkit-box-orient: vertical; -webkit-flex-direction: column; -ms-flexbox-direction: column; -ms-flex-direction: column; flex-direction: column; }
+
+.flexWrap{ -moz-box-wrap: wrap; -webkit-box-wrap: wrap; -ms-flexbox-wrap: wrap; flex-wrap: wrap; }
+.flexNoWrap{ -moz-box-wrap: nowrap; -webkit-box-wrap: nowrap; -ms-flexbox-wrap: nowrap; flex-wrap: nowrap; }
+.flexWrapReverse{ -moz-box-wrap: wrap-reverse; -webkit-box-wrap: wrap-reverse; -ms-flexbox-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+
+.flexJustifyBetween{ -webkit-justify-content: space-between; -ms-flex-pack: space-between; justify-content: space-between; }
+.flexJustifyAround{ -webkit-justify-content: space-around; -ms-flex-pack: space-around; justify-content: space-around; }
+.flexJustifyStart{ -webkit-justify-content: flex-start; -ms-flex-pack: flex-start; justify-content: flex-start; }
+.flexJustifyEnd{ -webkit-justify-content: flex-end; -ms-flex-pack: flex-end; justify-content: flex-end; }
+.flexJustifyCenter{ -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.flexAlignItemsCenter{ -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.flexAlignItemsBaseline{ -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.flexAlignItemsStart{ -webkit-align-items: flex-start; -ms-flex-align: flex-start; align-items: flex-start; }
+.flexAlignItemsEnd{ -webkit-align-items: flex-end; -ms-flex-align: flex-end; align-items: flex-end; }
+.flexAlignItemsStretch{ -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; }
+
+.flexAlignContentCenter{ -webkit-box-align-content: center; -webkit-align-content: center; -ms-flex-align-content: center; align-content: center; }
+.flexAlignContentAround{ -webkit-box-align-content: space-around; -webkit-align-content: space-around; -ms-flex-align-content: space-around; align-content: space-around; }
+.flexAlignContentStart{ -webkit-box-align-content: flex-start; -webkit-align-content: flex-start; -ms-flex-align-content: flex-start; align-content: flex-start; }
+.flexAlignContentEnd{ -webkit-box-align-content: flex-end; -webkit-align-content: flex-end; -ms-flex-align-content: flex-end; align-content: flex-end; }
+.flexAlignContentBetween{ -webkit-box-align-content: space-between; -webkit-align-content: space-between; -ms-flex-align-content: space-between; align-content: space-between; }
+.flexAlignContentStretch{ -webkit-box-align-content: stretch; -webkit-align-content: stretch; -ms-flex-align-content: stretch; align-content: stretch; }
+
+.flexAlignSelfCenter{ -webkit-box-align-self: center; -webkit-align-self: center; -ms-flex-align-self: center; align-self: center; }
+.flexAlignSelfAround{ -webkit-box-align-self: space-around; -webkit-align-self: space-around; -ms-flex-align-self: space-around; align-self: space-around; }
+.flexAlignSelfStart{ -webkit-box-align-self: flex-start; -webkit-align-self: flex-start; -ms-flex-align-self: flex-start; align-self: flex-start; }
+.flexAlignSelfEnd{ -webkit-box-align-self: flex-end; -webkit-align-self: flex-end; -ms-flex-align-self: flex-end; align-self: flex-end; }
+.flexAlignSelfBetween{ -webkit-box-align-self: space-between; -webkit-align-self: space-between; -ms-flex-align-self: space-between; align-self: space-between; }
+.flexAlignSelfStretch{ -webkit-box-align-self: stretch; -webkit-align-self: stretch; -ms-flex-align-self: stretch; align-self: stretch; }
+
+.flexSafariFix{ -webkit-flex:1 0 auto; } /* Safari fix for image and text items in a group */
+
+@media only screen and (max-width : 768px) {
+  .flexResponsive{ display: block !important; }
+}
+/* FLEX */

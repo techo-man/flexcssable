@@ -1,0 +1,43 @@
+{
+  "name": "flexcssable",
+  "version": "1.0.0",
+  "description": "A simple CSS Flex lib which helps anyone to build a responsive HTML5 layout",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chakilamshashi/flexcssable.git"
+  },
+  "keywords": [
+    "CSS",
+    "flex",
+    "stylesheet",
+    "responsive layout"
+  ],
+  "author": "Shashi Anand Chakilam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chakilamshashi/flexcssable/issues"
+  },
+  "homepage": "https://github.com/chakilamshashi/flexcssable#readme",
+  "devDependencies": {
+    "concurrent-transform": "^1.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "0.0.7",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-zip": "^3.2.0",
+    "q": "^1.4.1",
+    "run-sequence": "^1.1.5",
+    "yargs": "^4.6.0"
+  }
+}

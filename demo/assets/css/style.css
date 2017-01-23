@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+html, body{font-family: 'Quicksand', sans-serif; font-size: 14px; }
+.bg-f5f5f5{background-color: #f5f5f5; }
+.bg-lightblue{background-color: lightblue; }
+.color-282828{color: #282828;}

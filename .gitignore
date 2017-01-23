@@ -1,0 +1,11 @@
+/config.json
+/.DS_Store
+/.idea
+/bower_components
+/node_modules
+/build
+/build.zip
+*.sublime-project
+*.sublime-workspace
+*.log
+
