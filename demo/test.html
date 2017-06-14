@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="../dist/flexcssable.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/test.css">
+</head>
+<body class="bg-cccccc">
+  <header class="boxShadowDown pad10 bg-white posFixed width100 zIndex1000">
+    <div class="section960 flex flexJustifyBetween">
+      <div class="maxWidth150px pad10">LOGO</div>
+      <div class="txtcenter flex flexJustifyBetween font15">
+          <div class="mrgn10">Home</div>
+          <div class="mrgn10">About Us</div>
+          <div class="mrgn10">Contact Us</div>
+      </div>
+    </div>
+  </header>
+  <main class="minHeight100vh section960 bg-white padtop70">
+    <div id="photos" class="flex flexWrap flexJustifyBetween"></div>
+    <!-- <div class="flex flexJustifyBetween minHeight100vh">
+      <div class="minHeight100vh width100"></div>
+      <div class="minHeight100vh width100"></div>
+    </div> -->
+  </main>
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript">
+    var root = 'https://jsonplaceholder.typicode.com';
+    $(document).ready(function() {
+      $.ajax({
+        url: root + '/photos',
+        method: 'GET'
+      }).then(function(data) {
+        var html = '';
+        $.each(data, function(index, item) {
+          html += '<div class="item maxWidth150px mrgn10 boxShadowDown bg-f5f5f5">';
+            html += '<div class="itemBody">';
+              html += '<img src="'+item.thumbnailUrl+'" class="img-responsive d150">';
+            html += '</div>';
+            html += '<div class="itemHeader pad10 font12">';
+              html += item.title;
+            html += '</div>';
+          html += '</div>';
+        });
+        $('#photos').html(html);
+      });
+    });
+  </script>
+</body>
+</html>
